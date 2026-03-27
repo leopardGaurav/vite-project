@@ -1,0 +1,38 @@
+/* Main product card */
+.Product {
+  border: 1px solid #ccc;        /* light gray border */
+  border-radius: 8px;            /* rounded corners */
+  padding: 15px;                 /* inner spacing */
+  margin: 10px 0;                /* space between products */
+  background-color: #f9f9f9;    /* light background */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* subtle shadow */
+  width: 250px;                  /* fixed width for consistency */
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect */
+.Product:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Product title */
+.Product h4 {
+  margin: 0 0 10px 0;
+  color: #333;
+  font-size: 18px;
+}
+
+/* Description text */
+.Product p {
+  margin: 5px 0;
+  color: #555;
+  font-size: 14px;
+}
+
+/* Make multiple products appear in a row */
+.ProductTab {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px; /* spacing between cards */
+}
